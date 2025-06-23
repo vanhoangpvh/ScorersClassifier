@@ -1,0 +1,64 @@
+/* Custom styles for the application */
+.dropzone {
+    transition: all 0.3s ease;
+}
+
+.dropzone.dz-drag-hover {
+    background-color: #f3f4f6;
+    border-color: #3b82f6;
+}
+
+table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Ensure reference images stay within bounds */
+header .absolute {
+    max-width: 300px;
+}
+
+/* Ẩn biểu tượng mặc định của Dropzone */
+.dropzone .dz-preview .dz-remove {
+    display: inline-block;
+    background: #dc2626; /* đỏ */
+    color: white;
+    font-weight: bold;
+    border-radius: 9999px;
+    padding: 2px 8px;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* Canh giữa nút xoá bên dưới ảnh */
+.dropzone .dz-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ẩn phần overlay trắng to đè ngang ảnh */
+.dropzone .dz-preview .dz-image::after {
+    display: none !important;
+}
+
+/* Nếu có border trắng đè lên ảnh thì cũng bỏ */
+.dropzone .dz-preview .dz-image {
+    border: none !important;
+    box-shadow: none !important;
+    background: none !important;
+}
+
+/* Ảnh hiển thị gọn đẹp */
+.dropzone .dz-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.dz-progress, .dz-details {
+    display: none !important;
+}
