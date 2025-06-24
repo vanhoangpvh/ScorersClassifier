@@ -7,7 +7,7 @@ function slugify(str) {
 }
 
 function classifyFile(file) {
-    let url = "https://render-flask-deployment-akfd.onrender.com";
+    let url = "https://render-flask-deployment-akfd.onrender.com/classify_image";
 
     $("#submitBtn").addClass("pointer-events-none opacity-50");
     $("#classifyText").text("Classifying...");
