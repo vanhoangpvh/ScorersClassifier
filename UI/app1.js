@@ -7,7 +7,7 @@ function slugify(str) {
 }
 
 function classifyFile(file) {
-    const url = "http://127.0.0.1:5000";
+    const url = "http://127.0.0.1:5000/classify_image";
 
     $("#submitBtn").addClass("pointer-events-none opacity-50");
     $("#classifyText").text("Classifying...");
